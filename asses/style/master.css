@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: PlaywriteNL;
+    src: url(../font/PlaywriteNL-Regular.ttf);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    >section{
+        width: 100%;
+        height: 95%;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        background-color: rgba(255, 255, 255, 0.11);
+        >h1{
+            width: 100%;
+            height: 10%;
+            color:white;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5vw;          
+            /* background-color: blue; */
+            text-shadow: 4px 4px 2px rgba(223,214,214,0.07);
+            @media screen and (min-width : 768px) {
+                font-size: 1.6vw;
+            }
+            @media screen and (min-width : 1200px) {
+                font-size: 1.2vw;
+                
+            }
+            
+        }
+        >div:nth-of-type(1){
+            width: 100%;
+            height:10%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            >input{
+                width: 85%;
+                padding: 5px 10px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 1.5px groove gray;
+                color: white;
+                font-size:3vw;
+                text-transform: uppercase;
+                transition: all 0.3s linear;
+                @media screen and (min-width : 768px) {
+                    font-size: 1.3vw;
+                }
+            }
+          
+            >button{
+                width: 10%;
+                padding: 5px 10px 0 10px;
+                 background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 3vw;
+                cursor: pointer;      
+                transition: all 0.3s linear;     
+                @media screen and (min-width : 768px) {
+                    font-size: 1.2vw;
+                }
+            }
+            >button:hover{
+                transform: scale(1.1);
+            }
+        }
+        >div:nth-of-type(2){
+            width: 100%;
+            height: 80%;
+            /* border:2px solid rgb(32, 61, 203); */
+            color: white;     
+            >section{
+                width: 100%;
+                height: 100%;
+                 /* background-color: aqua;  */
+                 padding-bottom: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;   
+                align-content: start;            
+                width: 100%;
+                height: 100%;               
+                >*{
+                    width: 100%;
+                    text-align: center;
+                    /* margin: 10px 0; */
+                    /* border:1px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                >h3{
+                    height: 20%;
+                    /* background-color: palegreen; */
+                }
+                >p{
+                    height: 10%;
+                }
+                >figure{
+                    height: 60%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: start;
+                    >img{
+                        width: 100%;
+                        height: 30%;
+                        object-fit:contain;
+                    }
+                    >figcaption{
+                        height: 50%;
+                        /* background-color: palevioletred; */
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: wrap;
+                        >*{
+                            width: 100%;
+                            height: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-wrap: wrap;
+                        }
+                        >h2{
+                            
+                           
+                        }
+                        >div{                            
+                            >div:nth-of-type(1),
+                            div:nth-of-type(3)
+                            {
+                                width: 40%;
+                                height: 100%;
+                                /* border:2px solid black;  */
+                                display: flex;
+                                flex-wrap: wrap;
+                                >*{
+                                    width: 100%;
+                                }                               
+                            }
+                            >div:nth-of-type(2){
+                                width: 10%;
+                                /* border:2px solid black;  */
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                >span{
+                                    width: 1px;
+                                    height: 80%;
+                                    background-color: white;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+        }
+        @media screen and (min-width : 768px) {
+            width: 400px;
+            height: 500px;
+        }
+    }
+    >span{
+        position: fixed;
+        bottom: 2%;
+        font-family: PlaywriteNL;
+        font-size: 1vw;
+        color: aliceblue;
+        @media screen and (min-width : 768px) {
+            font-size: 0.5vw;
+        }
+        
+    }
+}
